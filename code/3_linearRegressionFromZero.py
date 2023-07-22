@@ -1,9 +1,9 @@
 import random
 import torch
 from d2l import torch as d2l
+
+
 # 1.获取数据集（这里是造一个)
-
-
 def synthetic_data(W, b, num_examples):
     X = torch.normal(0., 1., (num_examples, len(W)))
     Y = torch.matmul(X, W) + b
